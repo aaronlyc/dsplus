@@ -18,7 +18,6 @@ override LDFLAGS += \
   -X ${PACKAGE}/utils/version.gitTreeState=${GIT_TREE_STATE}
 
 ifneq (${GIT_TAG},)
-IMAGE_TAG=${GIT_TAG}
 override LDFLAGS += -X ${PACKAGE}.gitTag=${GIT_TAG}
 endif
 
